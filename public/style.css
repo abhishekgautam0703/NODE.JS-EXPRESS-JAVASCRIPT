@@ -1,0 +1,217 @@
+/* Global reset + modern font */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  color: #1e293b;
+}
+
+/* Small top bar */
+.one {
+  background: #ffffffcc;
+  height: 14px;
+  font-size: 11px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Dropdowns */
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.dropdown:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav_first ul {
+  display: flex;
+  color: white;
+}
+
+.nav_first {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(47, 81, 90), rgb(6, 93, 119));
+
+}
+
+.nav_first ul li {
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  box-shadow: inset;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav_first ul li:hover {
+  transform: translateY(-2px);
+  background: whitesmoke;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+/* Secondary bar */
+.second {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: opacity 0.3s ease;
+}
+#togglebtn {
+  display: none;
+}
+/* Clickable item */
+.item {
+  display: flex;
+  border: none;
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  justify-items: center;
+  align-items: center;
+}
+.item:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.Auth {
+  display: flex;
+  /*border: none;
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease; */
+  justify-items: center;
+  align-items: center;
+}
+
+/*
+.Auth:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+} */
+
+/* Layout */
+.third {
+  display: flex;
+  gap: 12px;
+  margin: 8px;
+}
+
+/* Right panel (main content) */
+.rightspace {
+  flex: 1;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.rightspace:hover {
+  transform: translateY(-3px);
+}
+
+/* Left sidebar */
+.leftspace {
+  width: 280px;
+  height: 100vh;
+  padding: 16px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Accent color blocks */
+.RW {
+  background: linear-gradient(135deg, #84cc16, #65a30d);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.recipe {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.about {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.other {
+  background: linear-gradient(135deg, #be123c, #881337);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+#menuoption,
+#menuoption1 {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 1000;
+}
+
+#menuoption a,
+#menuoption1 label {
+  display: block;
+  padding: 6px 12px;
+  background: whitesmoke;
+  border-radius: 6px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+#menuoption a:hover,
+#menuoption1 label:hover {
+  background: #e2e8f0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Purchase Entry</title>
+  <link rel="stylesheet" href="css/purchase.css">
+</head>
+<h2></h2>
+
+<body>
+
+  <div class="form-box">
+    <form action="" method="post">
+      <table id="P_CommonDetial">
+        <tr>
+          <td> <Span> Date : </Span></td>
+          <td><input id="P_date" type="date" placeholder="Enter date"></td>
+        </tr>
+        <tr>
+          <td><Span>Company Name : </Span></td>
+          <td><input id="P_CName" type="text" placeholder="Enter Company Name"> </td>
+        </tr>
+        <tr>
+          <td><Span>Invoice No. : </Span></td>
+          <td><input id="P_Invoice" type="text" placeholder="Enter Invoice No."></td>
+        </tr>
+        <tr>
+          <td> <Span>Invoice Date : </Span></td>
+          <td> <input type="date" placeholder="Invoice Date" id="P_Invoicedate"></td>
+        </tr>
+        <tr>
+          <td> <Span> Invoice Amount : </Span></td>
+          <td> <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+              placeholder="Enter Invoice Amount" id="P_InvoiceValue"></td>
+        </tr>
+        <tr>
+          <td> <span>Total Quantity</span></td>
+          <td><input type="text" placeholder="Quantity" id="P_Quantity"></td>
+        </tr>
+
+
+      </table>
+
+      <div id="P_itemdetail">
+        <table id="P_itemtable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Brand Name</th>
+              <th>Qty</th>
+              <th>Unit Price</th>
+              <th>Serial No.</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="Item_Body">
+
+          </tbody>
+        </table>
+        <button onclick="addrows()">➕</button>
+        <button type="button" onclick="addPurchase()">Submit</button>
+      </div>
+    </form>
+
+    <p id="msg"></p>
+  </div>
+  <script src="js/purchase.js"></script>
+</body>
+
+</html>

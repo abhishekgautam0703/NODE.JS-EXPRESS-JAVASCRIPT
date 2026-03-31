@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Stock Management</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="/js/index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">📦 StockPro</div>
+    <div class="nav-actions">
+      <button id="loginBtn" class="btn-primary">Login</button>
+       <button id="Create" class="btn-primary">Create Account</button>
+      <button id="logoutBtn" class="btn-secondary hidden">Logout</button>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <div class="welcome">
+      <h1>Welcome to StockPro Dashboard</h1>
+      <p id="statusText">Please login to access your system features.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Purchase Entry</h3>
+        <p>Record new purchase orders and update your inventory.</p>
+        <button id="purchaseBtn" disabled>Go to Purchase</button>
+      </div>
+
+      <div class="card">
+        <h3>Sales Entry</h3>
+        <p>Log new sales orders and manage outgoing stock.</p>
+        <button id="salesBtn" disabled>Go to Sales</button>
+      </div>
+
+      <div class="card">
+        <h3>Inventory</h3>
+        <p>Check your stock levels, reorder alerts, and product insights.</p>
+        <button id="stockBtn" disabled>View Stock</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StockPro Systems — Designed with ❤️ by Abhishek</p>
+  </footer>
+</body>
+</html>

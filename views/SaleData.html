@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Data</title>
+<link rel="stylesheet" href="css/purchasedata.css">
+</head>
+
+<body>
+
+<div class="pd_Header">
+    <div class="pd_Htext">SALES DATA</div>
+</div>
+
+<!-- SEARCH AREA -->
+<div class="search-container">
+
+    <div class="search-box">
+
+        <div class="search-group">
+            <label>Invoice :</label>
+            <input type="text" placeholder="Invoice No." id="pd_invoice">
+            <button onclick="Searchbyinvoice()">Search</button>
+        </div>
+
+        <div class="search-group">
+            <label>From :</label>
+            <input type="date" id="pd_From">
+
+            <label>To :</label>
+            <input type="date" id="pd_To">
+
+            <button onclick="Searchbydate()">Search</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- TABLE -->
+<div class="Pd_main">
+
+<div class="form-box">
+
+<table class="pd_table">
+
+<thead>
+<tr>
+<th>Type</th>
+<th>Company</th>
+<th>Invoice No</th>
+<th>Invoice Date</th>
+<th>Total Qty</th>
+<th>Invoice Amt</th>
+<th>Item</th>
+<th>Brand</th>
+<th>Serial</th>
+<th>Unit Price</th>
+<th>Qty</th>
+<th>Description</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="purchasedata">
+
+
+
+</tbody>
+
+</table>
+
+</div>
+</div>
+
+<script src="js/saledata.js"></script>
+
+</body>
+</html>

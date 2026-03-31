@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 25px 30px 30px;
+}
+
+/* ---------- COMMON DETAILS TABLE ---------- */
+
+#P_CommonDetial {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#P_CommonDetial td {
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+#P_CommonDetial span {
+  font-weight: 600;
+  color: #374151;
+}
+
+#P_CommonDetial input,
+#P_CommonDetial select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+#P_CommonDetial input:focus,
+#P_CommonDetial select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* ---------- ITEM DETAILS SECTION ---------- */
+
+#P_itemdetail {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+#P_itemtable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+  table-layout: fixed;
+}
+
+#P_itemtable thead {
+  background: #6366f1;
+  color: #ffffff;
+  word-wrap:break-word  ;
+}
+
+#P_itemtable th {
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+
+  }
+
+#P_itemtable td {
+  padding: 8px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#P_itemtable input,
+#P_itemtable select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+}
+
+#P_itemtable input:focus,
+#P_itemtable select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+  border: none;
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+button[onclick="addrow()"] {
+  background: #10b981;
+  color: #ffffff;
+}
+
+button[onclick="addPurchase()"] {
+  background: #4f46e5;
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+/* ---------- OTHER BRAND INPUT ---------- */
+
+#other_brand {
+  margin-top: 6px;
+}
+
+/* ---------- MESSAGE ---------- */
+
+#msg {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  #P_CommonDetial tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #P_CommonDetial td {
+    width: 100%;
+    padding: 6px 0;
+  }
+}
